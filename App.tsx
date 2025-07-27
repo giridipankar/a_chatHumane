@@ -1,12 +1,10 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
-
-import { NewAppScreen } from '@react-native/new-app-screen';
-import { StatusBar, StyleSheet, useColorScheme, View } from 'react-native';
+import {
+  StatusBar,
+  StyleSheet,
+  useColorScheme,
+  View,
+  Text,
+} from 'react-native';
 
 function App() {
   const isDarkMode = useColorScheme() === 'dark';
@@ -14,7 +12,20 @@ function App() {
   return (
     <View style={styles.container}>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <NewAppScreen templateFileName="App.tsx" />
+      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+        <Text style={{ color: isDarkMode ? 'white' : 'black', fontSize: 18 }}>
+          Hello there!{'\n'}
+        </Text>
+        <Text
+          style={{
+            color: isDarkMode ? 'white' : 'black',
+            fontSize: 14,
+            fontStyle: 'italic',
+          }}
+        >
+          I am chatHumane, your personal AI assistant.
+        </Text>
+      </View>
     </View>
   );
 }

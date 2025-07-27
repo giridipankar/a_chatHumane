@@ -117,3 +117,8 @@ dependencies {
         implementation jscFlavor
     }
 }
+
+// project.ext.react = [
+//         cliPath: "$rootDir/../node_modules/react-native/cli.js",
+//         entryFile : "index.js"
+//     ]
