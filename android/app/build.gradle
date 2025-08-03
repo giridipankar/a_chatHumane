@@ -118,7 +118,7 @@ dependencies {
     }
 }
 
-// project.ext.react = [
-//         cliPath: "$rootDir/../node_modules/react-native/cli.js",
-//         entryFile : "index.js"
-//     ]
+project.ext.vectoricons = [
+    iconFontNames: [ 'MaterialIcons.ttf', 'FontAwesome.ttf', 'MaterialCommunityIcons.ttf', 'Ionicons.ttf'] // Name of the font files you want to copy
+]
+apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
